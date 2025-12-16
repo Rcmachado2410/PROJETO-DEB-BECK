@@ -2,9 +2,7 @@ import express from "express";
 import cors from "cors";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { prisma } from "./prisma.js";
-
-
+import { prisma } from "prisma.js";
 
 
 const app = express();
@@ -59,6 +57,6 @@ app.post("/login", async (req, res) => {
   res.json({ token });
 });
 
-app.listen(3333, () => {
-  console.log("🔥 API rodando em http://localhost:3333");
+app.listen(3000, () => {
+  console.log("🔥 API rodando em http://localhost:3000");
 });
