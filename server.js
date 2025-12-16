@@ -2,8 +2,7 @@ import express from "express";
 import cors from "cors";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { prisma } from "prisma.js";
-
+import { prisma } from "./prisma.js";
 
 const app = express();
 
